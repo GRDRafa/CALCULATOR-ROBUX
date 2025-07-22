@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YANSSZS STORE - Estimasi Robux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">YANSSZS STORE</h1>
+    <p class="subtitle">Kalkulator Estimasi Kedatangan Robux via Gamepass</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <label for="purchaseDate">Tanggal Pembelian</label>
+      <input type="date" id="purchaseDate" />
+
+      <label for="purchaseTime">Jam Pembelian</label>
+      <input type="time" id="purchaseTime" />
+
+      <button id="calculateBtn">Hitung Estimasi</button>
+    </section>
+
+    <section id="result" class="result-card hidden">
+      <h2>Hasil Perkiraan:</h2>
+      <p id="purchaseDisplay"></p>
+      <p id="etaDisplay"></p>
+    </section>
+  </main>
+
+  <footer>© 2025 YANSSZS STORE. All rights reserved.</footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  animation: slideDown 1.2s ease-in-out;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: pulse 3s infinite;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+.form-section {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.result-card {
+  background: white;
+  padding: 25px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #efefef;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
